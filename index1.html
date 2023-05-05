@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <!--
+      -favicon
+    -->
+    <link rel="short icon" href="./image/logo/favicon.png" type="image/svg+xml">
+
+
+    <!--
+        -css link
+    -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--
+        -icon link
+    -->
+    <script src="https://kit.fontawesome.com/69808b25ce.js" crossorigin="anonymous"></script>
+
+    <!--
+        -background image
+    -->
+    <style>
+        body{
+            background-image: url('./image/background.jpg');
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        -header
+    --> 
+   <header>
+        <a href="./index.html">
+        <h2><img src="./image/logo/logo-no-background.png" width="200" height="38" alt="logo"></h2>
+        </a>
+   </header>
+ 
+    <div class="container">
+        <div class="left">
+            <label><i class="fa-brands fa-html5" style="color: #ff8040;"></i> HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-css3-alt" style="color: #0000ff;"></i> CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-square-js" style="color: #f0f000;"></i> JavaScript</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+
+        <div class="right">
+            <label><i class="fa-solid fa-play" style="color: #ff2b2b;"></i> Output</label>
+            <iframe id="output"></output>"></iframe>
+        </div>
+    </div>
+
+    <!--
+        -Footer
+    -->
+
+    <footer>
+    
+            <i class="fa-regular fa-copyright" style="color: #ffffff;"></i> Copyright 2023 Made by Luv Kumar Singh.
+        
+    </footer>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
